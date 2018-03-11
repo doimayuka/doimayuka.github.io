@@ -25,7 +25,21 @@ body{
 .container > .row > .col-sm-3 > p > img{
   width: 100%;
   height: auto;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+
+@media (max-width:767px) {
+  .container > .row > .col-sm-3 > p > img{
+    width: 200px;
+    height:auto;
+  }
+}
+
+@media (max-width:667px) {
+  .container > .row > .col-sm-3 > p > img{
+    width: 100%;
+    height:auto;
+  }
 }
 
 .container > .item > p > img{
