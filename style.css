@@ -13,6 +13,11 @@ body{
   color: #383c3c;
 }
 
+@media (max-width:768px) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .container > .row > .col-sm-4 > p > img{
   width: 100%;
   height: auto;
