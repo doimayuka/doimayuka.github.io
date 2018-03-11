@@ -21,7 +21,7 @@ body{
 }
 
 .container > .row > .col-sm-4 > p > img{
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
