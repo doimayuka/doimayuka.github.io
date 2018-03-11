@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_projects.css">
+    <link rel="stylesheet" href="style_navbar.css">
+    <title>Kotrio</title>
+    <script type="text/javascript">
+    $(function(){
+      $('a[href^=#]').click( function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-45;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/kotoji_logo_2.png" alt="" class="img-rounded">
+            </a>
+            <a class="navbar-brand" href="index.html" id="navbar-brand-name">Mayuka Doi</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gNav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="gNav">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="ACE2017.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="ACE2017.html">ACE2017</a></li>
+                  <li><a href="HCI172.html">HCI172</a></li>
+                  <li><a href="WISS2015.html">WISS2015</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#publications">Publications</a></li>
+              <li><a href="index.html#awards">Awards</a></li>
+              <li><a href="contents.html">Contents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="project" id="kotrio">
+      <h1>Kotrio</h1>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/gcGCxyVxzd4?rel=0" allowfullscreen></iframe>
+      </div>
+      <div class="project_contents">
+        <h2>作品解説</h2>
+        <p>箏とPCによる三重奏です。コンピュータミュージックという授業で発表を行いました。作曲からプロジェクションマッピングを用いた演出まで、すべて自分で行いました。</p>
+        <p>～パート～<br>Ⅰ箏 : PC<br>Ⅱ箏 : 箏（自分<br>十七弦 : PC<br></p>
+        コンサート形式の発表会であったため、自分の弾いている弦が観客者に見えるよう、弾く弦を光らせました。また、Ⅱ筝奏者の筝を挟んだ斜め左にⅠ筝奏者がいるかのように見せるため、龍尾側の弦も光らせました。水紋は基本的に十七弦の演奏に合わせた演出としました。Processing と Pure Data を用いて制作しております。
+      </div>
+    </div>
+
+    <footer>
+      <p style="font-size:12px; text-align:center;">&#169; Mayuka Doi</p>
+    </footer>
+  </body>
+</html>

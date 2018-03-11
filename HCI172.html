@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_projects.css">
+    <link rel="stylesheet" href="style_navbar.css">
+    <title>HCI172</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/kotoji_logo_2.png" alt="" class="img-rounded">
+            </a>
+            <a class="navbar-brand" href="index.html" id="navbar-brand-name">Mayuka Doi</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gNav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="gNav">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="ACE2017.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="ACE2017.html">ACE2017</a></li>
+                  <li><a href="HCI172.html">HCI172</a></li>
+                  <li><a href="WISS2015.html">WISS2015</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#publications">Publications</a></li>
+              <li><a href="index.html#awards">Awards</a></li>
+              <li><a href="contents.html">Contents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="project" id="hci172">
+      <h1>プロジェクションマッピングによる筝演奏学習支援システム (HCI172)</h1>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/0jsVv6HLSqs?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="project_contents">
+        <h2>Abstruct</h2>
+        <p>箏を演奏するためには，手の形や爪の当て方，力の入れ方といった演奏技術だけでなく，箏譜を読み弾くべき弦の位置を瞬時に把握することが必要である．また箏には25種類もの奏法が存在し，その中には運指の切り替えタイミング等の演奏するにあたって必要な情報が箏譜上に書かれていないものもある．そこで本稿では，「奏法」を含めた箏演奏学習支援手法を提案する．対象者は箏初心者とする．提案手法は，運指別に色分けした撥弦位置や弾く向きを表した矢印，奏法を表す記号といった演奏支援情報を箏の弦や龍甲に直接提示する．本提案システムでは，プロジェクションマッピングによって，これらの提示を行う．これにより，箏譜が読めず弦の位置も把握できない初心者でも，奏法を含めた箏演奏を学習できることを目指した．弦名が書かれた紙を用いた従来手法との比較実験を行い，提案手法の有用性を検証した．実験の結果，提案手法は従来手法以上に効果的であることを示した．</p>
+        <p><b>キーワード： </b>音楽演奏学習支援，箏，プロジェクションマッピング</p>
+      </div>
+      <div class="project_contents">
+        <h2>Paper</h2>
+        <p>土井麻由佳, 宮下芳明. プロジェクションマッピングによる箏演奏学習支援システム. Vol.2017-HCI-172, Vol.15, pp.1-8, 2017.</p>
+      </div>
+      <div class="project_contents">
+        <h2>Media</h2>
+        <ol>
+          <li>邦楽ジャーナル, Vol.364(17年5月号), pp.24-25.</li>
+          <li>WBS, トレンドたまご, <a href="http://txbiz.tv-tokyo.co.jp/wbs/vod/post_126699/">「琴の学習支援システム」</a>, 2017年2月15日付.</li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <p style="font-size:12px; text-align:center; padding-top:10px">&#169; Mayuka Doi</p>
+    </footer>
+  </body>
+</html>

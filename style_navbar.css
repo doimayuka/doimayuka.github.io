@@ -1,0 +1,90 @@
+/* navbar 全体の背景色 */
+.navbar-default {
+  background-color: #BA2636;
+}
+/* navbar テキストカラー */
+.navbar-default .navbar-nav > li > a {
+  color: #fffffc;
+}
+/* navbar hover,focus時のテキストカラー */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #d71518;
+  background-color: #f8f4e6;
+}
+/* navbar Brandのカラーと位置調整 */
+.navbar-default .navbar-brand {
+  color: #fffffc;
+}
+#navbar-brand-name{
+  padding-left: 10px;
+}
+.navbar-brand .img-rounded { width:40px; height:40px; margin-top:-10px; }
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #fffffc;
+  background-color: transparent;
+}
+/* navbar ドロップダウン(親)のカラー */
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  color: #d71518;
+  background-color: #f8f4e6;
+}
+/* navbar ドロップダウン(子)のボックスカラー */
+.dropdown-menu {
+  background-color: #BA2636;
+  border: 1px solid #fffffc;
+  border: 1px solid #fffffc(0, 0, 0, .15);
+  -webkit-box-shadow: 0 6px 12px rgba(94, 136, 129, 0.35);
+  box-shadow: 0 6px 12px rgba(94, 136, 129, 0.35);
+}
+/* navbar ドロップダウン(子)テキストカラー */
+.dropdown-menu>li>a {
+  color: #fffffc;
+}
+/* navbar ドロップダウン(子)focus,hover時のカラー */
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+  color: #d71518;
+  background-color: #f8f4e6;
+}
+/* navbar ドロップダウン(子)内の区切り線(class=”divider”)のカラー */
+.dropdown-menu .divider {
+  background-color: #f8f4e6;
+}
+/* navbar 画面サイズ767px以下の時のカラー */
+@media (max-width:767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #f8f4e6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #d71518;
+    background-color: #f8f4e6;
+  }
+  #navbar-brand-name{
+    padding-left: 0px;
+  }
+}
+/* navbar ハンバーガー四角枠 */
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+  border-width: 2px;
+}
+/* navbar ハンバーガー三本線 */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+/* navbar ハンバーガーボタン,タップとホバーした時の背景色と四角枠 */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #f8f4e6;
+  border-color: #d71518;
+}
+/* navbar ハンバーガーボタン,タップとホバーした時の三本線 */
+.navbar-default .navbar-toggle:focus > .icon-bar,
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #d71518;
+}

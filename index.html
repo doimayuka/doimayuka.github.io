@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_navbar.css">
+    <title>Mayuka Doi</title>
+    <script type="text/javascript">
+    $(function(){
+      $('a[href^=#]').click( function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img src="images/kotoji_logo_2.png" alt="" class="img-rounded">
+            </a>
+            <a class="navbar-brand" href="#" id="navbar-brand-name">Mayuka Doi</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gNav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="gNav">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="ACE2017.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="ACE2017.html">ACE2017</a></li>
+                  <li><a href="HCI172.html">HCI172</a></li>
+                  <li><a href="WISS2015.html">WISS2015</a></li>
+                </ul>
+              </li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#awards">Awards</a></li>
+              <li><a href="#contents">Contents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+            <p><img src="images/mayuka.jpg"></p>
+        </div>
+        <div class="col-sm-8">
+          <h2 style="font-size:24px;" class="prof_name">土井 麻由佳 / Mayuka Doi</h2>
+          <ul style="list-style-type:none;">
+            <li>明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 博士前期課程1年</li>
+            <li><a href="https://miyashita.com/">宮下研究室</a>所属</li>
+            <li>趣味: 筝を弾くこと, 犬と触れ合うこと, 数独</li>
+            <li>興味分野: HCI, 楽器演奏支援</li>
+            <li>E-mail: cs172030 (at) meiji.ac.jp</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item" id="projects">
+        <h2 style="font-size:24px;">Projects</h2>
+        <p><img img src="images/research.png" alt="projectionmapping_koto" alt=""></p>
+        <ol style="padding-left:20px;">
+          <li><a href="ACE2017.html">Koto Learning Support Method Considering Articulations (ACE2017 Paper)</a></li>
+          <li><a href="HCI172.html">プロジェクションマッピングによる筝演奏学習支援システム (HCI172)</a></li>
+          <li><a href="WISS2015.html">プロジェクションマッピングによる箏への奏法提示 (WISS2015 Demo)</a></li>
+        </ol>
+      </div>
+
+      <div class="item" id="publications">
+        <h2 style="font-size:24px">Publications</h2>
+        <div class="item_2">
+          <h3 style="font-size:20px;">国際学会</h3>
+            <ol>
+              <li>Mayuka Doi, Homei Miyashita. Koto Learning Support Method Considering Articulations. In Proceedings of ACE 2017, 2017.</li>
+            </ol>
+        </div>
+        <div class="item_2">
+          <h3 style="font-size:20px;">論文誌</h3>
+            <ol>
+              <li>土井麻由佳, 宮下芳明. 奏法を考慮した箏演奏学習支援手法に関する考察. 情報処理学会論文誌, Vol.59, No.3, 2018. (掲載予定)</li>
+            </ol>
+        </div>
+        <div class="item_2">
+          <h3 style="font-size:20px;">国内学会</h3>
+            <ol>
+              <li>土井麻由佳, 宮下芳明. プロジェクションマッピングによる箏演奏学習支援システム. Vol.2017-HCI-172, Vol.15, pp.1-8, 2017.</li>
+              <li>土井麻由佳, 宮下芳明. プロジェクションマッピングによる箏への奏法提示. 第23回インタラクティブシステムとソフトウェアに関するワークショップ論文集(WISS2015), pp.181-182, 2015.</li>
+            </ol>
+        </div>
+        <div class="item_2">
+          <h3 style="font-size:20px;">メディア</h3>
+            <ol>
+              <li>邦楽ジャーナル, Vol.364(17年5月号), pp.24-25.</li>
+              <li>WBS, トレンドたまご, <a href="http://txbiz.tv-tokyo.co.jp/wbs/vod/post_126699/">「琴の学習支援システム」</a>, 2017年2月15日付.</li>
+            </ol>
+        </div>
+      </div>
+
+      <div class="item" id="awards">
+        <h2 style="font-size:24px;">Awards</h2>
+          <ol>
+            <li>ACE2017 にて Best Paper Awards の Silver Award を受賞 <a href="http://www.meiji.ac.jp/ams/info/6t5h7p00000qas2g.html">受賞ニュース（明治大学）</a></li>
+          </ol>
+      </div>
+
+      <div class="item" id="contents">
+        <h2 style="font-size:24px;">Contents</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contens_example">
+              <a href="kotrio.html"><img src="images/kotrio.png" alt="kotrio" width="100%"></a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="contens_example">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="contens_example">
+            </div>
+          </div>
+        </div>
+          <p>その他は<a href="contents.html">こちら</a>をご覧ください</p>
+      </div>
+    </div>
+
+    <footer>
+      <p style="font-size:12px;">&#169; Mayuka Doi</p>
+    </footer>
+
+ </body>
+</html>

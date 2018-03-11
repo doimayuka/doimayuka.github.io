@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", Meiryo, "MS Pゴジック", sans-serif;
+  font-size: 15px;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.7;
+  background-color: #fffaf0;
+  background-image: url(images/tesukiwashi-pattern-08.jpg);
+  background-size: 100% auto;
+  color: #383c3c;
+}
+
+.video{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+.video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.project_contents{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project h1{
+  font-size: 28px;
+  padding-bottom:10px;
+}
+.project h2{
+  font-size:24px;
+  padding-top:5px;
+}
+.project p{
+  font-size: 15px;
+
+}

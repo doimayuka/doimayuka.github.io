@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_projects.css">
+    <link rel="stylesheet" href="style_navbar.css">
+    <title>ACE2017</title>
+    <script type="text/javascript">
+    $(function(){
+      $('a[href^=#]').click( function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-45;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/kotoji_logo_2.png" alt="" class="img-rounded">
+            </a>
+            <a class="navbar-brand" href="index.html" id="navbar-brand-name">Mayuka Doi</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gNav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="gNav">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="ACE2017.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="ACE2017.html">ACE2017</a></li>
+                  <li><a href="HCI172.html">HCI172</a></li>
+                  <li><a href="WISS2015.html">WISS2015</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#publications">Publications</a></li>
+              <li><a href="index.html#awards">Awards</a></li>
+              <li><a href="contents.html">Contents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="project" id="ace2017">
+      <h1>Koto Learning Support Considering Articulations (ACE2017)</h1>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/xoVmZoQdvlk?rel=0" allowfullscreen></iframe>
+      </div>
+      <div class="project_contents">
+        <h2>Abstruct</h2>
+        <p>Playing the Koto requires various skills such as reading Koto scores and un-derstanding string positions instantly. In addition, there are many articula-tions, and some of them have no information about the timing for switching fingers or pushing a string down in Koto scores. Therefore, learning to play the Koto is difficult. In this paper, we propose a method to support beginners in practicing the Koto considering articulations. The method directly pre-sents information for effective Koto performance, such as the string posi-tions color-coded by fingering, timing of picking, picking directions, and ar-ticulations to the strings and soundboard. An experimental system presents this information by using projection mapping. We evaluated its effectiveness for beginners and an experienced person by comparative experiments through three user studies. As a result of these studies, we found that begin-ners were able to learn the Koto more effectively than by the traditional method, but our system is not useful for experienced people.</p>
+        <p><b>Keywords:</b> Koto, Music, Instrument Learning, Projection Mapping.</p>
+      </div>
+      <div class="project_contents">
+        <h2>Paper</h2>
+        <p>Mayuka Doi, Homei Miyashita. Koto Learning Support Method Considering Articulations. In Proceedings of ACE 2017, 2017.</p>
+      </div>
+      <div class="project_contents">
+        <h2>Awards</h2>
+        <p>We won Silver Award for the Best Paper Awards.
+      </div>
+    </div>
+
+    <footer>
+      <p style="font-size:12px; text-align:center; padding-top:10px">&#169; Mayuka Doi</p>
+    </footer>
+  </body>
+</html>
