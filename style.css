@@ -20,8 +20,8 @@ body{
   }
 }
 
-.container > .row > .col-sm-3 > p > img{
-  width: 50%;
+.container > .row > .col-sm-2 > p > img{
+  width: 100%;
   height: auto;
 }
 
