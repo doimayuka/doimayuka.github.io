@@ -22,9 +22,10 @@ body{
   }
 }
 
-.container > .row > .col-sm-2 > p > img{
+.container > .row > .col-sm-3 > p > img{
   width: 100%;
   height: auto;
+  padding-top: 30px;
 }
 
 .container > .item > p > img{
